@@ -1,0 +1,23 @@
+.home-section {
+	background: url("../img/background-homepage.png") no-repeat;
+	height: 100vh;
+	width: 100%;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}	
+
+.home-wrap {
+    text-align: center;
+}
+
+.scroll-down {
+    margin-top: 50px;
+}
+	

@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800,italic);
+* {
+  font-family: raleway; }
+
+section {
+  overflow: hidden; }
+
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+  margin: 0; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #545454;
+  font-weight: 800; }
+
+h3 {
+  color: #ffffff;
+  font-size: 35px;
+  font-style: italic;
+  margin: 0; }
+
+p {
+  line-height: 200%; }
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  position: fixed; }
+
+nav {
+  width: 100vw;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 900;
+  -webkit-transition: 2.2s ease; }
+
+nav.hasBackground {
+  background-color: #f5a503;
+  -webkit-transition: 2.2s ease;
+  z-index: 999; }
+
+.navigation {
+  background-color: transparent;
+  list-style: none;
+  padding: 0;
+  margin: 25px 0 0 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end; }
+  .navigation .navigation-item {
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 600; }
+    .navigation .navigation-item a {
+      text-decoration: none;
+      color: #ffffff;
+      margin: 0 10px;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s; }
+    .navigation .navigation-item a:after {
+      content: "";
+      display: block;
+      padding: 10px 0 0 0;
+      border-top: 2px solid #999;
+      width: 0;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s; }
+    .navigation .navigation-item a:hover:after {
+      width: 100%;
+      border-top: 2px solid #f5a503; }
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around; } }
+.home-section {
+  background: url("../img/background-homepage.png") no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.home-wrap {
+  text-align: center; }
+
+.scroll-down {
+  margin-top: 50px; }
+
+.about-section {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.about-wrap {
+  display: flex; }
+
+.skills-container {
+  width: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column; }
+
+.skills-item {
+  background: #f5a503;
+  padding: 5px;
+  width: 300px;
+  height: 20px;
+  margin-top: 10px;
+  color: white;
+  font-weight: 800;
+  font-size: 17px;
+  text-align: left; }
+
+.skills-item:nth-child(2) {
+  width: 200px; }
+
+.bio-image {
+  flex: 1;
+  background: url("../img/eelco-poelstra.png") no-repeat;
+  background-size: contain;
+  margin: 0 auto; }
+
+.work-section {
+  height: 100vh;
+  width: 100%;
+  background-color: yellow; }
+
+.contact-section {
+  height: 100vh;
+  width: 100%;
+  background-color: red; }
+
+.work-section {
+  height: 100vh;
+  width: 100%;
+  background-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */
