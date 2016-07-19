@@ -13,72 +13,120 @@
 	}
 }
 
-.work-wrap { 
-	display: -ms-flexbox;
-	-ms-flex-wrap: wrap;
-	-ms-flex-direction: column;
-	-webkit-flex-flow: row wrap; 
-	flex-flow: row wrap; 
+.work-wrap {
+ 	display: -ms-flexbox;
+ 	-ms-flex-wrap: wrap;
+ 	-ms-flex-direction: column;
+ 	-webkit-flex-flow: row wrap; 
+ 	flex-flow: row wrap; 
 	display: -webkit-box;
 	display: flex;	
-	a {
-		text-decoration: none;
-	}		
-	p {
-		text-shadow: 0 0 8px black;
-		text-transform: uppercase;
-		text-align: center;
-		font-weight: 500;
-		font-size: 2em;
-		width: auto;
-		margin: 90px auto 0;		
-	}	
-	hr {
-		background: #fb0a4e;
-		height: 2px;
-		width: 35%;	
-		border: none;
-	}	
 }
 
-.img-box { 
+.bg-image {
 	-webkit-box-flex: auto;
 	-ms-flex: auto;
 	flex: auto; 
 	width: 400px;
 	height: 300px; 
-	margin: -2px;						
-}
-
-.bg-image {	
+	margin: -2px;
+	background-size: 100%;
+	text-decoration: none;
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 	transition: filter 600ms ease;
 	-webkit-transition: -webkit-filter 600ms ease;
-	background-cover: 100%;
 	&:nth-child(1){
 		background-image: url("../img/codepamoja-gallery.jpg");
 	}
 	&:nth-child(2){
 		background-image: url("../img/ftsf-gallery.jpg");
-	}	
+	}
 	&:nth-child(3){
-		background-image: url("../img/competa-gallery.jpg");
-	}
-	&:nth-child(4){
-		background-image: url("../img/canon-gallery.jpg");
-	}
-	&:nth-child(5){
 		background-image: url("../img/wittedraak-gallery.jpg");
 	}
-	&:nth-child(6){
-		background-image: url("../img/hhs-gallery.jpg");
-	}		
-	&:hover{
+	&:hover {
 		filter: grayscale(0);
 		-webkit-filter: grayscale(0);
-	}				
-}		
+	}
+}
+
+.test {
+	text-shadow: 0 0 8px black;
+	text-transform: uppercase;
+	margin: 10px auto;
+	font-weight: 500;
+	font-size: 2em;
+	width: auto;
+	color: green;		
+	border-bottom: 2px solid #fb0a4e;	
+	padding-bottom: 10px;		
+	display: block;
+}
+
+
+// .work-wrap { 
+// 	display: -ms-flexbox;
+// 	-ms-flex-wrap: wrap;
+// 	-ms-flex-direction: column;
+// 	-webkit-flex-flow: row wrap; 
+// 	flex-flow: row wrap; 
+// 	display: -webkit-box;
+// 	display: flex;	
+// 	a {
+// 		text-decoration: none;
+// 		filter: grayscale(0);
+// 		-webkit-filter: grayscale(0);	
+// 		&:hover {
+// 			filter: grayscale(100%);
+// 			-webkit-filter: grayscale(100%);
+// 			transition: filter 600ms ease;
+// 			-webkit-transition: -webkit-filter 600ms ease;
+// 		}
+// 	}		
+// 	span {
+// 		text-shadow: 0 0 8px black;
+// 		text-transform: uppercase;
+// 		text-align: center;
+// 		font-weight: 500;
+// 		font-size: 2em;
+// 		width: auto;
+// 		color: white;		
+// 		border-bottom: 2px solid #fb0a4e;	
+// 		padding-bottom: 10px;
+// 	}	
+// }
+
+// .img-box { 
+// 	-webkit-box-flex: auto;
+// 	-ms-flex: auto;
+// 	flex: auto; 
+// 	width: 400px;
+// 	height: 300px; 
+// 	margin: -2px;						
+// }
+
+// .bg-image {	
+// 	background-size: 100%;
+// 	&:nth-child(1){
+// 		background-image: url("../img/codepamoja-gallery.jpg");
+// 	}
+// 	&:nth-child(2){
+// 		background-image: url("../img/ftsf-gallery.jpg");
+// 	}	
+// 	&:nth-child(3){
+// 		background-image: url("../img/competa-gallery.jpg");
+// 	}
+// 	&:nth-child(4){
+// 		background-image: url("../img/canon-gallery.jpg");
+// 	}
+// 	&:nth-child(5){
+// 		background-image: url("../img/wittedraak-gallery.jpg");
+// 	}
+// 	&:nth-child(6){
+// 		background-image: url("../img/hhs-gallery.jpg");
+// 	}					
+// }		
 
 
 

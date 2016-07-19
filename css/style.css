@@ -170,51 +170,41 @@ nav.hasBackground {
   flex-flow: row wrap;
   display: -webkit-box;
   display: flex; }
-  .work-wrap a {
-    text-decoration: none; }
-  .work-wrap p {
-    text-shadow: 0 0 8px black;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 500;
-    font-size: 2em;
-    width: auto;
-    margin: 90px auto 0; }
-  .work-wrap hr {
-    background: #fb0a4e;
-    height: 2px;
-    width: 35%;
-    border: none; }
 
-.img-box {
+.bg-image {
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
   width: 400px;
   height: 300px;
-  margin: -2px; }
-
-.bg-image {
+  margin: -2px;
+  background-size: 100%;
+  text-decoration: none;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   transition: filter 600ms ease;
-  -webkit-transition: -webkit-filter 600ms ease;
-  background-cover: 100%; }
+  -webkit-transition: -webkit-filter 600ms ease; }
   .bg-image:nth-child(1) {
     background-image: url("../img/codepamoja-gallery.jpg"); }
   .bg-image:nth-child(2) {
     background-image: url("../img/ftsf-gallery.jpg"); }
   .bg-image:nth-child(3) {
-    background-image: url("../img/competa-gallery.jpg"); }
-  .bg-image:nth-child(4) {
-    background-image: url("../img/canon-gallery.jpg"); }
-  .bg-image:nth-child(5) {
     background-image: url("../img/wittedraak-gallery.jpg"); }
-  .bg-image:nth-child(6) {
-    background-image: url("../img/hhs-gallery.jpg"); }
   .bg-image:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0); }
+
+.test {
+  text-shadow: 0 0 8px black;
+  text-transform: uppercase;
+  margin: 10px auto;
+  font-weight: 500;
+  font-size: 2em;
+  width: auto;
+  color: green;
+  border-bottom: 2px solid #fb0a4e;
+  padding-bottom: 10px;
+  display: block; }
 
 .contact-section {
   height: 100vh;
