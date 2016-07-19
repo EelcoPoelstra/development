@@ -23,7 +23,9 @@ h3 {
   margin: 0; }
 
 p {
-  line-height: 200%; }
+  line-height: 200%;
+  width: 80%;
+  margin: 0 auto 30px; }
 
 .header {
   top: 0;
@@ -62,6 +64,8 @@ nav.hasBackground {
     margin-right: 20px;
     font-size: 14px;
     font-weight: 600; }
+    .navigation .navigation-item:nth-child(4) {
+      margin-right: 50px; }
     .navigation .navigation-item a {
       text-decoration: none;
       color: #ffffff;
@@ -107,10 +111,11 @@ nav.hasBackground {
 
 .about-section {
   height: auto;
-  width: 80%;
-  background-color: white;
-  margin: 0 auto;
-  margin-bottom: 50px; }
+  width: 100%;
+  margin: 0 auto; }
+  .about-section h2 {
+    text-align: left;
+    margin-left: 50px; }
 
 .about-wrap {
   display: flex; }
@@ -146,18 +151,79 @@ nav.hasBackground {
   margin: 0 auto; }
 
 .work-section {
-  height: 100vh;
+  height: auto;
   width: 100%;
-  background-color: yellow; }
+  background-color: #262626;
+  margin-bottom: -2px; }
+  .work-section p {
+    color: white; }
+  .work-section h2 {
+    color: white;
+    text-align: right;
+    margin-right: 50px; }
+
+.work-wrap {
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex; }
+  .work-wrap a {
+    text-decoration: none; }
+  .work-wrap p {
+    text-shadow: 0 0 8px black;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    width: auto;
+    margin: 90px auto 0; }
+  .work-wrap hr {
+    background: #fb0a4e;
+    height: 2px;
+    width: 35%;
+    border: none; }
+
+.img-box {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 400px;
+  height: 300px;
+  margin: -2px; }
+
+.bg-image {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 600ms ease;
+  -webkit-transition: -webkit-filter 600ms ease;
+  background-cover: 100%; }
+  .bg-image:nth-child(1) {
+    background-image: url("../img/codepamoja-gallery.jpg"); }
+  .bg-image:nth-child(2) {
+    background-image: url("../img/ftsf-gallery.jpg"); }
+  .bg-image:nth-child(3) {
+    background-image: url("../img/competa-gallery.jpg"); }
+  .bg-image:nth-child(4) {
+    background-image: url("../img/canon-gallery.jpg"); }
+  .bg-image:nth-child(5) {
+    background-image: url("../img/wittedraak-gallery.jpg"); }
+  .bg-image:nth-child(6) {
+    background-image: url("../img/hhs-gallery.jpg"); }
+  .bg-image:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0); }
 
 .contact-section {
   height: 100vh;
   width: 100%;
-  background-color: red; }
+  background-color: white; }
 
-.work-section {
-  height: 100vh;
+.footer {
+  height: 100px;
   width: 100%;
-  background-color: yellow; }
+  background-color: blue; }
 
 /*# sourceMappingURL=style.css.map */
