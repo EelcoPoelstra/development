@@ -1,0 +1,29 @@
+// $background-size: cover;
+
+
+// @mixin
+
+
+// $font-base: 12px;
+
+// @mixin sample {
+//   font-size: $font-base;
+// }
+
+// p {
+//   @include sample;
+// }
+
+// &:nth-child(3){
+//     background:
+//         linear-gradient(
+//             rgba(0, 0, 0, 0.5),
+//             rgba(0, 0, 0, 0.5)
+//         ),
+//         url("../img/competa-gallery.jpg");
+//     background-size: cover;
+//     &:hover {
+//         background: url("../img/competa-gallery.jpg");
+//         background-size: cover;
+//     }
+// }
