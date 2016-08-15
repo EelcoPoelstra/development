@@ -17,7 +17,16 @@
     text-align: center;
 }
 
-.scroll-down {
+.move-down-arrow {
     margin-top: 50px;
+}
+
+.move-down-btn {
+    background: transparent;
+    border: none;  
+    &:focus{
+        outline:0;   
+    }
+
 }
 	

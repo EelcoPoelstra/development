@@ -5,6 +5,7 @@
 		<meta name="" content="">
 		<link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/style.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="/css/animations.css"> -->
 		<link rel="stylesheet" type="text/css" href="/css/font-awesome/css/font-awesome.min.css">
  		<title>Eelco Poelstra</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">	
@@ -14,10 +15,10 @@
 		<header class="header">
 			<nav>
 				<ul class="navigation">
-				  <li class="navigation-item"><a href="#">home</a></li>
-				  <li class="navigation-item"><a href="#">about</a></li>
-				  <li class="navigation-item"><a href="#work">work</a></li>
-				  <li class="navigation-item"><a href="#">contact</a></li>
+				  <li class="navigation-item"><a href="#" data-scroll="home">home</a></li>
+				  <li class="navigation-item"><a href="#" data-scroll="work">work</a></li>				  
+				  <li class="navigation-item"><a href="#" data-scroll="about">about</a></li>
+				  <li class="navigation-item"><a href="#" data-scroll="contact">contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -26,21 +27,15 @@
 			<div class="home-wrap">
 				<h1>Eelco Poelstra</h1>
 				<h3>front-end developer</h3>
-				<a href="#">
-					<img class="scroll-down" src="img/scroll-down.png">
-				</a>
+				<button class="move-down-btn">
+					<img class="move-down-arrow" data-scroll="work" src="img/scroll-down.png"/>
+				</button>
 			</div>
-		</section>
-
-		<section id="about" class="about-section">	
-			<h2 class="h2-left">about me</h2>
-			<p class="">I build clean, responsive websites that work on a variety of screens and devices and may or may not be powered by WordPress. I mostly work directly for and with other designers to translate their creative work into responsive HTML/CSS templates or fully functional WordPress themes. I work with Adobe, SASS, HTML5/CSS3 &amp; Javascript. I have a working knowledge of popular frameworks and know my way around version management and working in SCRUM teams.</p>
 		</section>			
 		
-		<section id="work" class="work-section">
+<!-- 		<section id="work" class="work-section">
 			<h2>work</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui nulla, commodo ac tortor non, mollis consequat leo. Sed in purus luctus, semper urna vel, consequat lectus. Suspendisse convallis sem quis velit ultricies, semper semper justo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus, magna id lobortis aliquet, erat metus ornare lectus, non pulvinar ligula libero ac orci.</p>				
-
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui nulla, commodo ac tortor non, mollis consequat leo. Sed in purus luctus, semper urna vel, consequat lectus. Suspendisse convallis sem quis velit ultricies, semper semper justo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing e.lit. In finibus, magna id lobortis aliquet, erat metus ornare lectus, non pulvinar ligula libero ac orci.</p>				
 			<div class="work-wrap">
 				<a href="" class="bg-image">
 					<span class="work-line">codepamoja</span>
@@ -61,30 +56,137 @@
 					<span class="work-line">de haagse hogeschool</span>
 				</a>				
 			</div>
+		</section> -->	
+	
 
-		</section>	
-
-		<section class="contact-section">
-			<h2 class="h2-left">contact</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui nulla, commodo ac tortor non, mollis consequat leo. Sed in purus luctus, semper urna vel, consequat lectus. Suspendisse convallis sem quis velit ultricies, semper semper justo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus, magna id lobortis aliquet, erat metus ornare lectus, non pulvinar ligula libero ac orci.</p>			
-			<div class="form-wrap">
-				<form class="contact-form">
-					<input class="register-input" type="text" placeholder="NAME" required>		  
-					<input class="register-input" type="email" placeholder="EMAIL" required>		  
-					<textarea class="register-input" placeholder="MESSAGE" required ></textarea>	  
-					<button class="submit" name="send" type="submit">send</button>
-				</form>		 
+		<section id="work" class="work-section">
+			<h2>work</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui nulla, commodo ac tortor non, mollis consequat leo. Sed in purus luctus, semper urna vel, consequat lectus. Suspendisse convallis sem quis velit ultricies, semper semper justo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing e.lit. In finibus, magna id lobortis aliquet, erat metus ornare lectus, non pulvinar ligula libero ac orci.</p>	
+			<div class="work-gallery-wrap">
+				<div class="work-item item1">
+					<div class="work-item__overlay">
+						<h3 class="work-item__title">titel website hier</h3>
+						<a class="work-item__link" href="#">View website</a>
+					</div>
+				</div>			  
+				<div class="work-item item2">
+					<div class="work-item__overlay">
+						<h3 class="work-item__title">titel website hier</h3>
+						<a class="work-item__link" href="#">View website</a>
+					</div>
+				</div>			  
+				<div class="work-item item3">
+					<div class="work-item__overlay">
+						<h3 class="work-item__title">titel website hier</h3>
+						<a class="work-item__link" href="#">View website</a>
+					</div>
+				</div>			  
+				<div class="work-item item4">
+					<div class="work-item__overlay">
+						<h3 class="work-item__title">titel website hier</h3>
+						<a class="work-item__link" href="#">View website</a>
+					</div>
+				</div>			  
+				<div class="work-item item5">
+					<div class="work-item__overlay">
+						<h3 class="work-item__title">titel website hier</h3>
+						<a class="work-item__link" href="#">View website</a>
+					</div>
+				</div>			  
+				<div class="work-item item6">
+					<div class="work-item__overlay">
+						<h3 class="work-item__title">titel website hier</h3>
+						<a class="work-item__link" href="#">View website</a>
+					</div>
+				</div>
 			</div>
 		</section>
+	
+
+		<section id="about" class="about-section">	
+			<h2 class="h2-left">about me</h2>
+			<p class="">I build clean, responsive websites that work on a variety of screens and devices and may or may not be powered by WordPress. I mostly work directly for and with other designers to translate their creative work into responsive HTML/CSS templates or fully functional WordPress themes. I work with Adobe, SASS, HTML5/CSS3 &amp; Javascript. I have a working knowledge of popular frameworks and know my way around version management and working in SCRUM teams.</p>
+			<div class="wordcloud-container">
+				<div class="wordcloud-smaller-balloons floating">
+					<span class="floating balloon-mid"></span>
+					<span class="floating balloon-small"></span>
+				</div>
+				<div class="wordcloud-big-balloon floating">					
+					<span class="wordcloud-item skill-html pulse">HTML(5)</span>
+					<span class="wordcloud-item skill-css pulse">CSS</span>
+					<span class="wordcloud-item skill-sass pulse">SASS</span>
+					<span class="wordcloud-item skill-scss pulse">SCSS</span>
+					<span class="wordcloud-item skill-php pulse">PHP</span>
+					<span class="wordcloud-item skill-js pulse">JavaScript</span>
+					<span class="wordcloud-item skill-git pulse">Git</span>
+					<span class="wordcloud-item skill-bem pulse">BEM</span>
+					<span class="wordcloud-item skill-scrum pulse">Agile &amp; Scrum</span>
+					<span class="wordcloud-item skill-grunt pulse">Grunt</span>
+					<span class="wordcloud-item skill-gulp pulse">Gulp</span>
+					<span class="wordcloud-item skill-wp pulse">WordPress</span>
+					<span class="wordcloud-item skill-ps pulse">Photoshop</span>
+					<span class="wordcloud-item skill-responsive pulse">Responsive webdesign</span>
+					<span class="wordcloud-item skill-command pulse">Command line</span>
+					<span class="wordcloud-item skill-mobile pulse">Mobile</span>
+				</div>
+				<figure class="wordcloud-eelco-photo">
+					<img src="img/eelco-poelstra.png">
+				</figure>
+			</div>
+		</section>		
+
+		<section id="contact" class="contact-section">
+			<h2 class="h2-left">contact</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui nulla, commodo ac tortor non, mollis consequat leo. Sed in purus luctus, semper urna vel, consequat lectus. Suspendisse convallis sem quis velit ultricies, semper semper justo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus, magna id lobortis aliquet, erat metus ornare lectus, non pulvinar ligula libero ac orci.</p>
+
+			<div class="contact-wrap">
+				<div class="contact-left-side">
+					<form class="left-form">
+						<input class="user-details" type="text" placeholder="NAME" required>		  
+						<input class="user-details" type="email" placeholder="EMAIL" required>		  
+						<input class="user-details" type="email" placeholder="EMAIL" required>
+						<button class="submit" name="send" type="submit">send</button>
+					</form>					
+				</div>
+				<div class="contact-right-side">
+					<form class="right-form">
+						<textarea class="user-comment" placeholder="MESSAGE" required ></textarea>
+					</form>	
+				</div>				
+			</div>
+
+		</section>
+
+
+
+
+<!-- <form name="contactform" method="POST" action="mail.php" id="form">
+ 	<button type="button" id="close">X</button>
+	<label>Name</label>
+	<input class="field" type="text" name="name" data-2700="width:0px;" data-3300="width:300px;">
+	<p class="errortext" id="error_name"></p>
+
+	<label>Email</label>
+	<input class="field"type="email" name="email" data-2700="width:0px;" data-3300="width:300px;">
+	<p class="errortext" id="error_email"></p>
+
+	<label>Comment</label>
+	<textarea class="field" type="text" name="comment" data-2700="width:0%;" data-3300="width:100%;"></textarea>
+	<p class="errortext" id="error_comment" class="margin"></p>
+	<div id="somethingSumbit" data-2700="width:0%;" data-3300="width:100%;">
+		<input type="submit" value="submit" id="submit"></input>
+	</div>
+</form> -->
+
 
 		<footer class="footer">
-	        <div class="footer-wrap">
-	            <i class="fa fa-twitter-square fa-2x social-icons"></i>
-	            <i class="fa fa-linkedin-square fa-2x social-icons"></i>
-	            <i class="fa fa-github-square fa-2x social-icons"></i>
-	        </div>
-		</footer>
+			<a href="#" class="social-icons fa fa-facebook-square fa-2x"></a>
+			<a href="#" class="social-icons fa fa-linkedin-square fa-2x"></a>
+			<a href="#" class="social-icons fa fa-github-square fa-2x"></a>
+		</footer> 
 
+
+		<script src="js/scroll-down.js"></script>	
 		<script src="js/nav.js"></script>	
 	</body>
 </html>

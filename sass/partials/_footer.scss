@@ -1,31 +1,14 @@
 .footer {
-	height: auto;
+	height: 52px;
 	width: 100%;
 	background-color: #262626;	
-}
-
-.footer-wrap {
-	width: 100%;
-	height: auto;
-	text-align: center;
-	display: inline-block;
-	color: #f5a503;
-	a {
-		text-decoration: none;
+	.social-icons {
+		float: right;
 		color: #f5a503;
+		text-decoration: none;
+		padding: 10px;
+		&:nth-child(1) {
+			margin-right: 30px;
+		}		
 	}
 }
-
-.social-icons {
-	padding: 10px 6px;
-}
-
-
-//   width: 100%
-//   height: auto
-//   text-align: center
-//   display: inline-block
-//   color: $orange
-
-// .social-icons
-// padding: 0 6px 20px

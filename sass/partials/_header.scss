@@ -12,12 +12,14 @@ nav {
 	position: fixed;
 	top: 0;
 	z-index: 900;
-	-webkit-transition: 2.2s ease;
+	-webkit-transition: 1.8s ease;
+	transition: 1.8s ease; 
 }
 
 nav.hasBackground {
 	background-color: #f5a503;
-	-webkit-transition: 2.2s ease;
+	-webkit-transition: 1.8s ease;
+	transition: 1.8s ease; 
 	z-index: 999;
 }
 

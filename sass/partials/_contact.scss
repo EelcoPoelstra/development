@@ -3,37 +3,75 @@
 	height: auto; 
 	margin: 0 auto; 
 	background: #DDD; 
+	padding-bottom: 35px;
 	h2 {
 		text-align: left;
 		margin-left: 50px;		
 	}	
 }
 
-.form-wrap {
-	width: 40%; 
-	height: auto; 
-	padding: 0;
-	margin: 0 0 40px 50px;
+.contact-wrap {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
 }
 
-.register-input {
-	width: 100%;
-	height: 30px;
+.contact-left-side {
+	width: 48%;
+	height: 200px;
+	float: left;
+	@media screen and (max-width: 750px) {
+		width: 100%;
+		float: none;
+		height: 148px;
+	}	
+}
+
+.left-form {
+	margin-right: 10px;
+	@media screen and (max-width: 750px) {
+		margin-right: 0px;
+	}		
+}
+
+.contact-right-side {
+	width: 49%;
+	height: 200px;
+	float: left;
+	@media screen and (max-width: 750px) {
+		width: 100%;
+		float: none;
+	}	
+}
+
+.right-form {
+	margin-left: 10px;
+	@media screen and (max-width: 750px) {
+		margin-left: 0px;
+	}		
+}
+
+.user-details,
+.user-comment {
+	width: 98%;
 	font-size: 12px;
 	color: #999;
 	border: 2px solid #545454;
-	margin-bottom: 25px;
-	padding-left: 2px;
 	&:focus{
 	border: 2px solid #f5a503;
 	color: #545454;		
 	}
 }
 
-.contact-form textarea{
-	height:150px;
-	resize: none;
-	padding-left: 1px;	
+.user-comment {
+	height: 123px;
+	padding: 7px 0 0 4px;
+}
+
+.user-details {
+	height: 30px;	
+	margin-bottom: 14px;
+	padding-left: 4px;
 }
 
 .submit {
@@ -45,4 +83,7 @@
 	text-transform: uppercase;
 	color: #FFF;
 	border: 2px solid #545454;
+	@media screen and (max-width: 750px) {
+		margin-top: 142px;
+	}		
 }
