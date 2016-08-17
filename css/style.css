@@ -30,6 +30,68 @@ p {
   width: 80%;
   margin: 0 auto 30px; }
 
+@keyframes floating {
+  0% {
+    transform: translate(0%, 0%); }
+  25% {
+    transform: translate(5%, 15%); }
+  50% {
+    transform: translate(10%, 5%); }
+  75% {
+    transform: translate(0%, 15%); }
+  100% {
+    transform: translate(0%, 0%); } }
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(0%, 0%); }
+  25% {
+    -webkit-transform: translate(5%, 15%); }
+  50% {
+    -webkit-transform: translate(15%, 5%); }
+  75% {
+    -webkit-transform: translate(5%, 15%); }
+  100% {
+    -webkit-transform: translate(0%, 0%); } }
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-duration: 10s; }
+
+@keyframes floating-less {
+  0% {
+    transform: translate(0%, 0%); }
+  25% {
+    transform: translate(3%, 5%); }
+  50% {
+    transform: translate(5%, 2%); }
+  75% {
+    transform: translate(0%, 5%); }
+  100% {
+    transform: translate(0%, 0%); } }
+@-webkit-keyframes floating-less {
+  0% {
+    -webkit-transform: translate(0%, 0%); }
+  25% {
+    -webkit-transform: translate(5%, 10%); }
+  50% {
+    -webkit-transform: translate(5%, 5%); }
+  75% {
+    -webkit-transform: translate(0%, 5%); }
+  100% {
+    -webkit-transform: translate(0%, 0%); } }
+.floating-less {
+  animation-name: floating-less;
+  -webkit-animation-name: floating-less;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-duration: 10s; }
+
 .header {
   top: 0;
   left: 0;
@@ -47,7 +109,7 @@ nav {
   transition: 1.8s ease; }
 
 nav.hasBackground {
-  background-color: #f5a503;
+  background-color: #262626;
   -webkit-transition: 1.8s ease;
   transition: 1.8s ease;
   z-index: 999; }
@@ -131,39 +193,42 @@ nav.hasBackground {
     text-align: right;
     margin-right: 50px; }
 
-@keyframes highlight {
-  0% {
-    color: #626262; }
-  100% {
-    color: red; } }
-@keyframes floating {
-  0% {
-    transform: translateY(0%); }
-  30% {
-    transform: translateY(10%); }
-  50% {
-    transform: translateX(5%); }
+.bounce {
+  animation: bounce 6s ease infinite; }
+
+@keyframes bounce {
   70% {
-    transform: translateX(5%); }
+    transform: translateY(0%); }
+  80% {
+    transform: translateY(-3%); }
+  90% {
+    transform: translateY(0%); }
+  93% {
+    transform: translateY(-18%); }
+  97% {
+    transform: translateY(0%); }
+  99% {
+    transform: translateY(-8%); }
   100% {
-    transform: translateY(0%); } }
-.floating {
-  animation-name: floating;
-  -webkit-animation-name: floating;
-  animation-duration: 5s;
-  -webkit-animation-duration: 5s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite; }
+    transform: translateY(0); } }
+.bounce2 {
+  animation: bounce2 6s ease infinite; }
 
-.pulse {
-  animation: pulse 1s infinite ease-in-out alternate;
-  animation-delay: 3s; }
-
-@keyframes pulse {
-  from {
-    transform: scale(0.7); }
-  to {
-    transform: scale(1.1); } }
+@keyframes bounce2 {
+  70% {
+    transform: translateY(0%); }
+  80% {
+    transform: translateY(-5%); }
+  90% {
+    transform: translateY(0%); }
+  93% {
+    transform: translateY(-25%); }
+  97% {
+    transform: translateY(0%); }
+  99% {
+    transform: translateY(-7%); }
+  100% {
+    transform: translateY(0); } }
 .wordcloud-eelco-photo {
   position: absolute;
   bottom: 0;
@@ -212,10 +277,7 @@ nav.hasBackground {
   top: 3em;
   left: 3.6em;
   font-size: 60px;
-  color: #626262;
-  animation-name: floating;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; }
+  color: #626262; }
 
 .skill-scss {
   top: 1em;
@@ -504,7 +566,6 @@ nav.hasBackground {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background: #DDD;
   padding-bottom: 35px; }
   .contact-section h2 {
     text-align: left;
@@ -523,7 +584,7 @@ nav.hasBackground {
     .contact-left-side {
       width: 100%;
       float: none;
-      height: 148px; } }
+      height: 128px; } }
 
 .left-form {
   margin-right: 10px; }
@@ -549,8 +610,8 @@ nav.hasBackground {
 .user-details,
 .user-comment {
   width: 98%;
-  font-size: 12px;
-  color: #999;
+  font-size: 13px;
+  color: #000;
   border: 2px solid #545454; }
   .user-details:focus,
   .user-comment:focus {
@@ -559,7 +620,8 @@ nav.hasBackground {
 
 .user-comment {
   height: 123px;
-  padding: 7px 0 0 4px; }
+  padding: 7px 0 0 4px;
+  resize: none; }
 
 .user-details {
   height: 30px;
@@ -577,7 +639,7 @@ nav.hasBackground {
   border: 2px solid #545454; }
   @media screen and (max-width: 750px) {
     .submit {
-      margin-top: 142px; } }
+      margin-top: 140px; } }
 
 .footer {
   height: 52px;
@@ -590,5 +652,44 @@ nav.hasBackground {
     padding: 10px; }
     .footer .social-icons:nth-child(1) {
       margin-right: 30px; }
+
+.quote-section {
+  height: auto;
+  width: 100%;
+  background: #f5a503;
+  padding: 70px 0; }
+
+blockquote {
+  font-family: railway;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0.5em 2em 0.5em 3em; }
+  blockquote .quote {
+    font-size: 2.2em; }
+  blockquote .author {
+    padding-right: 2em;
+    text-align: right;
+    margin-top: 20px; }
+
+blockquote:before {
+  position: absolute;
+  font-size: 6em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C"; }
+
+blockquote:after {
+  position: absolute;
+  float: right;
+  font-size: 6em;
+  line-height: 1;
+  right: 0;
+  bottom: -0.5em;
+  content: "\201D"; }
+
+blockquote cite:before {
+  content: "\2013"; }
 
 /*# sourceMappingURL=style.css.map */

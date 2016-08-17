@@ -12,49 +12,30 @@
     }
 }
 
-@keyframes highlight {
-    0% {
-    	color: #626262;
-    }
-    100% {
-    	color: red;
-    }
+.bounce {
+  animation: bounce 6s ease infinite;
+}
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-3%); }
+    90% { transform:translateY(0%); }
+    93% { transform:translateY(-18%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-8%); }
+    100% { transform:translateY(0); }
 }
 
-@keyframes floating {
-    0% {
-        transform: translateY(0%);   
-    }
-    30% {
-        transform: translateY(10%); 
-    }  
-    50% {
-    	transform: translateX(5%); 
-    }   
-    70% {
-    	transform: translateX(5%); 
-    } 
-    100% {
-    	transform: translateY(0%); 
-    } 
+.bounce2 {
+  animation: bounce2 6s ease infinite;
 }
-
-.floating {
-    animation-name: floating;
-    -webkit-animation-name: floating;
-    animation-duration: 5s;   
-    -webkit-animation-duration: 5s;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-}
-
-.pulse {
-  animation: pulse 1s infinite ease-in-out alternate;
-  animation-delay: 3s;
-}
-@keyframes pulse {
-  from { transform: scale(0.7); }
-  to { transform: scale(1.1); }
+@keyframes bounce2 {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-5%); }
+    90% { transform:translateY(0%); }
+    93% { transform:translateY(-25%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-7%); }
+    100% { transform:translateY(0); }
 }
 
 .wordcloud-eelco-photo {
@@ -113,9 +94,6 @@
 	left: 3.6em;
 	font-size: 60px;
 	color: #626262;	
-    animation-name: floating;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
 
 .skill-scss {

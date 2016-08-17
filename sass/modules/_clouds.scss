@@ -1,0 +1,92 @@
+@keyframes floating {
+	0% {
+		transform: translate(0%,0%);	
+	}
+	25% {
+		transform: translate(5%,15%);	
+	}	
+	50% {
+		transform: translate(10%,5%);	
+	}	
+	75% {
+		transform: translate(0%,15%);	
+	}	
+	100% {
+		transform: translate(0%,0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translate(0%,0%);	
+	}
+	25% {
+		-webkit-transform: translate(5%,15%);	
+	}	
+	50% {
+		-webkit-transform: translate(15%,5%);	
+	}	
+	75% {
+		-webkit-transform: translate(5%,15%);	
+	}	
+	100% {
+		-webkit-transform: translate(0%,0%);
+	}			
+}
+
+.floating {
+	animation-name: floating;
+	-webkit-animation-name: floating;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-duration: 10s;
+}
+
+@keyframes floating-less {
+	0% {
+		transform: translate(0%,0%);	
+	}
+	25% {
+		transform: translate(3%,5%);	
+	}	
+	50% {
+		transform: translate(5%,2%);	
+	}	
+	75% {
+		transform: translate(0%,5%);	
+	}	
+	100% {
+		transform: translate(0%,0%);
+	}			
+}
+
+@-webkit-keyframes floating-less {
+	0% {
+		-webkit-transform: translate(0%,0%);	
+	}
+	25% {
+		-webkit-transform: translate(5%,10%);	
+	}	
+	50% {
+		-webkit-transform: translate(5%,5%);	
+	}	
+	75% {
+		-webkit-transform: translate(0%,5%);	
+	}	
+	100% {
+		-webkit-transform: translate(0%,0%);
+	}			
+}
+
+.floating-less {
+	animation-name: floating-less;
+	-webkit-animation-name: floating-less;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-duration: 10s;
+}
+

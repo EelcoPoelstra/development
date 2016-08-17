@@ -1,0 +1,43 @@
+.quote-section {
+	height: auto;
+	width: 100%;
+	background: #f5a503;
+	padding: 70px 0;
+}
+
+blockquote {
+    font-family: railway;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0.5em 2em 0.5em 3em;
+	.quote {
+		font-size: 2.2em;
+	}    
+	.author {
+	    padding-right: 2em;
+	    text-align:right;
+	    margin-top: 20px;
+	}  
+}
+blockquote:before {
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    position: absolute;
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+
+blockquote cite:before {
+    content: "\2013";
+}
